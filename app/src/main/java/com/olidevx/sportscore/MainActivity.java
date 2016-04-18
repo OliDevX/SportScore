@@ -11,18 +11,12 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    public gamecontrol mCurrentGame;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        // Initialize gamecontrol class
-        mCurrentGame.setGame(0,0,"HOME","VISITOR");
-        // TODO: Eliminate hard coding from teams name in mCurrentGame.setGame
 
         // Set listener to home_layout & visit_layout
         View mLayoutHome = (View) findViewById(R.id.home_layout);
