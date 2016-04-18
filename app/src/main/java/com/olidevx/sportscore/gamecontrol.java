@@ -9,8 +9,6 @@ public class gamecontrol {
     Display mDisplay_1;
     Display mDisplay_2;
 
-
-
     public void setGame (int pointsTeam1, int pointsTeam2, String nameTeam1, String nameTeam2) {
         mTeam1.setTeamName(nameTeam1);
         mTeam2.setTeamName(nameTeam2);

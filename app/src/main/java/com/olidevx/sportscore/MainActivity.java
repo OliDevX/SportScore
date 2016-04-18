@@ -11,6 +11,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declares the new game controller as mCurrentGame
+    public gamecontrol mCurrentGame = new gamecontrol();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
