@@ -9,6 +9,8 @@ public class gamecontrol {
     Display mDisplay_1;
     Display mDisplay_2;
 
+
+
     public void setGame (int pointsTeam1, int pointsTeam2, String nameTeam1, String nameTeam2) {
         mTeam1.setTeamName(nameTeam1);
         mTeam2.setTeamName(nameTeam2);
@@ -19,8 +21,14 @@ public class gamecontrol {
     public void change_score (team mTeam, boolean up_or_down) {
         if (up_or_down) {
             mTeam.increasePoint();
+
         } else {
             mTeam.decreasePoint();
         }
+    }
+
+    public void update_displays() {
+        mDisplay_1.mScore_points = mTeam1.tellPoints();
+        mDisplay_2.mScore_points = mTeam2.tellPoints();
     }
 }
